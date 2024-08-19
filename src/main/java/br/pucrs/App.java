@@ -1,13 +1,11 @@
 package br.pucrs;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        long[] arr = {49,55,24,72,17};
+        long grt = GreaterDC.maxVal2(arr, 0, arr.length - 1);
+        System.out.println(grt);
     }
 }

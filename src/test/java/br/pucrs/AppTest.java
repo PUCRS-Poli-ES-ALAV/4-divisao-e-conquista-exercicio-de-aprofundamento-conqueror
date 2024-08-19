@@ -1,20 +1,18 @@
 package br.pucrs;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
-    public void shouldAnswerWithTrue()
+    public void maxVal2Test()
     {
-        assertTrue( true );
+        long[] arr = {49,55,24,72,17};
+
+        long result = GreaterDC.maxVal2(arr, 0, arr.length - 1);
+
+        assertEquals(72, result);
     }
 }
