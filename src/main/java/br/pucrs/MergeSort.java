@@ -1,7 +1,10 @@
 package br.pucrs;
 
 public class MergeSort {
+    public static int operationsCounter;
+
     public static void mergeSort(long[] arr, int l, int r) {
+        operationsCounter++;
         if (l < r) {
             int m = (l + r) / 2;
             mergeSort(arr, l, m);
@@ -17,16 +20,21 @@ public class MergeSort {
         long[] L = new long[n1];
         long[] R = new long[n2];
 
-        System.arraycopy(arr, l, L, 0, n1);
+        for(int i = 0; i < n1; i++) {
+            L[i] = arr[l + i];
+            operationsCounter++;
+        }
 
         for (int j = 0; j < n2; j++) {
             R[j] = arr[m + 1 + j];
+            operationsCounter++;
         }
 
         int i = 0, j = 0;
         int k = l;
 
         while (i < n1 && j < n2) {
+            operationsCounter++;
             if (L[i] <= R[j]) {
                 arr[k] = L[i];
                 i++;
@@ -39,12 +47,14 @@ public class MergeSort {
         }
 
         while (i < n1) {
+            operationsCounter++;
             arr[k] = L[i];
             i++;
             k++;
         }
 
         while (j < n2) {
+            operationsCounter++;
             arr[k] = R[j];
             j++;
             k++;
