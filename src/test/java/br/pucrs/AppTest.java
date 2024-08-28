@@ -9,7 +9,7 @@ public class AppTest
     @Test
     public void maxVal2Test()
     {
-        GreaterDC greaterDC = new GreaterDC();
+        MaxVal2 greaterDC = new MaxVal2();
         long[] arr = {49,55,24,72,17};
 
         long result = greaterDC.maxVal2(arr, 0, arr.length - 1);

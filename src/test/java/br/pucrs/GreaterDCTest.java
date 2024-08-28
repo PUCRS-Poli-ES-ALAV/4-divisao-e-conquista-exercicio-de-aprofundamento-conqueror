@@ -12,10 +12,10 @@ public class GreaterDCTest {
         }
 
         long start = System.nanoTime();
-        long val = GreaterDC.maxVal2(arr, 0, arr.length - 1);
+        long val = MaxVal2.maxVal2(arr, 0, arr.length - 1);
         long end = System.nanoTime();
 
-        System.out.printf("Result=%d, Operations=%d, Time=%.2f\n", val, GreaterDC.operationsCounter, (double) (end - start) / 1000000);
+        System.out.printf("Result=%d, Operations=%d, Time=%.2f\n", val, MaxVal2.operationsCounter, (double) (end - start) / 1000000);
 
     }
     @Test
@@ -27,10 +27,10 @@ public class GreaterDCTest {
         }
 
         long start = System.nanoTime();
-        long val = GreaterDC.maxVal2(arr, 0, arr.length - 1);
+        long val = MaxVal2.maxVal2(arr, 0, arr.length - 1);
         long end = System.nanoTime();
 
-        System.out.printf("Result=%d, Operations=%d, Time=%.2f\n", val, GreaterDC.operationsCounter, (double) (end - start) / 1000000);
+        System.out.printf("Result=%d, Operations=%d, Time=%.2f\n", val, MaxVal2.operationsCounter, (double) (end - start) / 1000000);
 
     }
     @Test
@@ -42,10 +42,10 @@ public class GreaterDCTest {
         }
 
         long start = System.nanoTime();
-        long val = GreaterDC.maxVal2(arr, 0, arr.length - 1);
+        long val = MaxVal2.maxVal2(arr, 0, arr.length - 1);
         long end = System.nanoTime();
 
-        System.out.printf("Result=%d, Operations=%d, Time=%.2f\n", val, GreaterDC.operationsCounter, (double) (end - start) / 1000000);
+        System.out.printf("Result=%d, Operations=%d, Time=%.2f\n", val, MaxVal2.operationsCounter, (double) (end - start) / 1000000);
 
     }
 }

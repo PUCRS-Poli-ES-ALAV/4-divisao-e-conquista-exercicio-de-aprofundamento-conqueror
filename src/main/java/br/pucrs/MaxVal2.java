@@ -1,6 +1,6 @@
 package br.pucrs;
 
-public class GreaterDC {
+public class MaxVal2 {
     public static int operationsCounter;
 
     public static long maxVal2(long[] A, int init, int end) {
