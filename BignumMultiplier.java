@@ -1,7 +1,5 @@
-package br.pucrs;
-
 public class BignumMultiplier {
-    public static long multiply(String x, String y) {
+    public static long call(String x, String y) {
         // if (x.length() <= 2) {
         //     int xInt = Integer.parseInt(x);
         //     int yInt = Integer.parseInt(y);
@@ -15,6 +13,6 @@ public class BignumMultiplier {
 
         // String str = xFirstHalf + yFirstHalf + " + " + xLastHalf + yFirstHalf + " + " + xFirstHalf + yLastHalf + " + " + xLastHalf + yLastHalf;
 
-        return (4 * multiply(xFirstHalf, yFirstHalf)) + (2 * (multiply(xLastHalf, yFirstHalf) + multiply(xFirstHalf, yLastHalf))) + multiply(xLastHalf, yLastHalf);
+        return (4 * call(xFirstHalf, yFirstHalf)) + (2 * (call(xLastHalf, yFirstHalf) + call(xFirstHalf, yLastHalf))) + call(xLastHalf, yLastHalf);
     }
 }

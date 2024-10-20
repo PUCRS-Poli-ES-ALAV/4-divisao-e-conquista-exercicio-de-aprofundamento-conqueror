@@ -19,12 +19,13 @@
 public class MergeSort {
     public static int operationsCounter;
 
-    public static void mergeSort(long[] arr, int l, int r) {
+    public static void call(long[] arr, int l, int r) {
         operationsCounter++;
+
         if (l < r) {
             int m = (l + r) / 2;
-            mergeSort(arr, l, m);
-            mergeSort(arr, m + 1, r);
+            call(arr, l, m);
+            call(arr, m + 1, r);
             merge(arr, l, m, r);
         }
     }
