@@ -145,9 +145,7 @@ public class Main {
     private static void multiply() {
         long start;
         long end;
-        long[] arr;
         int n = 4;
-        arr = new long[n];
 
         start = System.nanoTime();
         Multiply.call((long) (Math.random() *(Math.pow(2, n) - 1)), (long) (Math.random() *(Math.pow(2, n) - 1)), n);
