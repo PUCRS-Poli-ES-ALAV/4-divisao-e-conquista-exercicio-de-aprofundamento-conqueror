@@ -1,5 +1,3 @@
-package br.pucrs;
-
 import org.junit.Test;
 
 public class GreaterDCTest {

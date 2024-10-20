@@ -1,5 +1,3 @@
-package br.pucrs;
-
 public class MaxVal1 {
     public static int operationsCounter;
 

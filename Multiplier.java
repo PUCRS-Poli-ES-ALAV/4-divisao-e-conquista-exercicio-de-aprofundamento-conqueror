@@ -1,5 +1,3 @@
-package br.pucrs;
-
 /*
  A Multiplicação Inteira de n-bits recebe dois números inteiros x e y de n-bits e retorna o resutado de x * y.
 
