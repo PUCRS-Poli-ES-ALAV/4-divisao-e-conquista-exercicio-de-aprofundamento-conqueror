@@ -27,4 +27,8 @@ public class Multiply {
             return (long) (Math.pow(2, 2*m) * e + Math.pow(2, m)*(g + h) + f);
         }
     }
+
+    public static void resetOperationsCounter() {
+        operationsCounter = 0;
+    }
 }

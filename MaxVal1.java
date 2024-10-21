@@ -10,4 +10,8 @@ public class MaxVal1 {
         }
         return max;
     }
+
+    public static void resetOperationsCounter() {
+        operationsCounter = 0;
+    }
 }

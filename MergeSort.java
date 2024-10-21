@@ -77,4 +77,8 @@ public class MergeSort {
             k++;
         }
     }
+
+    public static void resetOperationsCounter() {
+        operationsCounter = 0;
+    }
 }

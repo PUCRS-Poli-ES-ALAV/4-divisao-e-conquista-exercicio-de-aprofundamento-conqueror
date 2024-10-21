@@ -13,4 +13,8 @@ public class MaxVal2 {
             return Long.max(v1,v2);
         }
     }
+
+    public static void resetOperationsCounter() {
+        operationsCounter = 0;
+    }
 }
